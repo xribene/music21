@@ -2880,8 +2880,9 @@ class MeasureParser(SoundTagMixin, XMLParserBase):
                     continue
                 c.expressions.append(exp)
                 seenExpressions.add(type(exp))
-
-            n.articulations = []
+			
+            # xribene
+            # n.articulations = []
             n.expressions = []
 
         self.spannerBundle.freePendingSpannedElementAssignment(c)
